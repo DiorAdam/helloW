@@ -8,11 +8,11 @@
                 "/Zi",
                 "/EHsc",
                 "/Fe:",
-                "${fileDirname}\\.vscode\\${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\.piecexec\\${fileBasenameNoExtension}.exe",
                 "${file}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}\\.vscode"
+                "cwd": "${fileDirname}\\.piecexec"
             },
             "problemMatcher": [
                 "$msCompile"
@@ -27,11 +27,11 @@
                 "/Zi",
                 "/EHsc",
                 "/Fe:",
-                "${fileDirname}\\.vscode\\${fileBasenameNoExtension}.exe",
+                "${fileDirname}\\.piecexec\\${fileBasenameNoExtension}.exe",
                 "${file}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}\\.vscode"
+                "cwd": "${fileDirname}\\.piecexec"
             },
             "problemMatcher": [
                 "$msCompile"
