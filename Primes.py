@@ -11,4 +11,6 @@ def listPrimes(n: int) -> int:
                 j+=1
     return ans
 
-print(listPrimes(10000)[-10:])
+#print(listPrimes(10000)[-10:])
+
+
