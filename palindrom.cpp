@@ -39,7 +39,7 @@ std::string longestPalindrom(std::string s){
 
 
 int main(){
-    std::string s = "abbachjkallbblla";
+    std::string s = "abbachjkboallbbllaob";
 
     std::cout << longestPalindrom(s);
 }
