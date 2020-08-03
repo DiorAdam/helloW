@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 
 bool isPalin(std::string s){
@@ -32,16 +33,40 @@ std::string longestPalindrom(std::string s){
             m += 2;
             l = lo;
         }
-        i+=1;
+        i++;
     }
     return s.substr(l,m); 
 }
 
 
+bool sentencePalindrome(std::string s){
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    int i=0, j=s.size()-1 ;
+    while (i<=j){
+        if (isalnum(s[i]) && isalnum(s[j])){
+            if (s[i] != s[j]){
+                return false;
+            }
+            i++;
+            j--;
+        }
+        else{
+            if (!isalnum(s[i])){ i++; }
+            if (!isalnum(s[j])){ j-- ;}
+        }
+    }
+    return true;
+}
+
+
 int main(){
     std::string s = "abbachjkboallbbllaob";
-
-    std::cout << longestPalindrom(s);
+    std::string sentence0 = "race a car";
+    std::string sentence1 = "A man, a plan, a canal: Panama";
+    if (sentencePalindrome(sentence1)){ 
+        std::cout << "palindome\n";
+    }else{std::cout << "not a palindrome";}
+    
 }
 
 
