@@ -14,3 +14,4 @@ public class maxContinuousSum {
         System.out.println(longestSum(nums));
     }
 }
+
